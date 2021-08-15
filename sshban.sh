@@ -21,7 +21,7 @@ if [ $bantime != 0 ]; then
         do
                 if [ -n "$line" ]; then
                         if [ "$curtime" -gt $(("$(echo "$line" | cut -d ' ' -f12)"+bansec)) ]; then
-                                        /sbin/iptables -D INPUT -s "$(echo "$line" | cut -d ' ' -f8)" -j DROP -m comment --comment "$(echo "$line" | cut -d '*' -f4 | awk '{$1=$1};1')"
+                                /sbin/iptables -D INPUT -s "$(echo "$line" | cut -d ' ' -f8)" -j DROP -m comment --comment "$(echo "$line" | cut -d '*' -f4 | awk '{$1=$1};1')"
                         fi
                 fi
         done <<< "$ipall"
