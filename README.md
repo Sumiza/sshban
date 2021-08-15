@@ -4,6 +4,7 @@ Couldn't install fail2ban on a specific server but was getting annoyed by someon
 * Bans IPs that fail with wrong passwords/users/sshkeys.<br />
 * Uses iptables to drop IPs.<br />
 * Uses Journalctl to ready the last x minutes of the ssh log.
+* Can run it every minute with cron but would suggest 5+ minutes.
 
 ```
 Settings:
