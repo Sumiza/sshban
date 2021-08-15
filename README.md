@@ -1,5 +1,5 @@
 # sshban
-Couldn't install fail2ban on a specific server but was getting annoyed by someone trying to access it. If you can use fail2ban (https://github.com/fail2ban/fail2ban) I would very much recommend it.
+Couldn't install fail2ban on a specific server but was getting annoyed by someone trying to access it. If you can use fail2ban (https://github.com/fail2ban/fail2ban) I would very much recommend it, but this is an option if needed.
 
 * Bans IPs that fail with wrong passwords/users/sshkeys.<br />
 * Uses iptables to drop IPs.<br />
