@@ -27,5 +27,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: sudo -s
-        run: bash sshban.sh
+      run: |
+        sudo -s
+        bash sshban.sh
