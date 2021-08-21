@@ -13,4 +13,3 @@ tries=3         #-- Allowed login tries (+one try counts as a disconnect from se
 bantime=720     #-- Time for IP to stay banned in minutes  - 0 to never remove
 ```
 Custom iptables rules: its safe to add any other IPs to block or white list in iptables, it only removes ones with a comment that has "Bantime:"
-Update: Added support for ipinfo.io to see who is trying to get into your server, default just puts it on echo.
