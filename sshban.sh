@@ -18,7 +18,7 @@ do
         if [ "$(grep -c <<< "$try" "$i")" -gt $tries ]; then
                 if [ "$( grep -c <<< "$ipall" "$i")" -eq 0 ]; then
                        /sbin/iptables -A INPUT -s "$i" -j DROP -m comment --comment "Bantime: $(date +%s) - $(date)"
-                        #Uncomment next line to use the ipinfo service, pipe it whatever is wanted, default is just echo for testing.
+                        #Uncomment next line to use the ipinfo service, pipe it to whatever is wanted, default is just echo for testing.
                         #ipadded "$i"
                 fi
         fi
